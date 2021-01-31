@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<meta name='viewport' content='width=device-width, initial-scale=1.0' />
+<meta http-equiv='X-UA-Compatible' content='IE=edge' />
+<link rel="profile" href="https://gmpg.org/xfn/11" />
+<title>Ravendev &#8211; Web Design, Front &amp; Back-end, UI &amp; UX Developer</title>
+<link rel='dns-prefetch' href='//cdnjs.cloudflare.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link href='https://fonts.gstatic.com/' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="Ravendev &raquo; Feed" href="/https://andrie0604.github.io/Ravendev/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Ravendev &raquo; Comments Feed" href="/https://andrie0604.github.io/Ravendev/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.5.3"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='/https://andrie0604.github.io/Ravendev/wp-includes/css/dist/block-library/style.min.css?ver=5.5.3' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-theme-css'  href='/https://andrie0604.github.io/Ravendev/wp-includes/css/dist/block-library/theme.min.css?ver=5.5.3' type='text/css' media='all' />
+<link rel='stylesheet' id='ultimate-icons-css'  href='/https://andrie0604.github.io/Ravendev/wp-content/uploads/bb-plugin/icons/ultimate-icons/style.css?ver=2.4.0.2' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-5-css'  href='/https://andrie0604.github.io/Ravendev/wp-content/plugins/bb-plugin/fonts/fontawesome/5.14.0/css/all.min.css?ver=2.4.0.2' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css'  href='/https://andrie0604.github.io/Ravendev/wp-content/plugins/bb-plugin/fonts/fontawesome/5.14.0/css/v4-shims.min.css?ver=2.4.0.2' type='text/css' media='all' />
+<link rel='stylesheet' id='fl-builder-layout-5-css'  href='/https://andrie0604.github.io/Ravendev/wp-content/uploads/bb-plugin/cache/5-layout.css?ver=7fdfb01f04c10c92b4bcc074592ccdab' type='text/css' media='all' />
+<link rel='stylesheet' id='menu-image-css'  href='/https://andrie0604.github.io/Ravendev/wp-content/plugins/menu-image/includes/css/menu-image.css?ver=3.0.1' type='text/css' media='all' />
+<link rel='stylesheet' id='foundation-icons-css'  href='https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css?ver=2.4.0.2' type='text/css' media='all' />
+<link rel='stylesheet' id='fl-builder-layout-bundle-478012d713440a2dc6c740d244d1382a-css'  href='/https://andrie0604.github.io/Ravendev/wp-content/uploads/bb-plugin/cache/478012d713440a2dc6c740d244d1382a-layout-bundle.css?ver=2.4.0.2-1.2.5' type='text/css' media='all' />
+<link rel='stylesheet' id='megamenu-css'  href='/https://andrie0604.github.io/Ravendev/wp-content/uploads/maxmegamenu/style.css?ver=6d85a5' type='text/css' media='all' />
+<link rel='stylesheet' id='dashicons-css'  href='/https://andrie0604.github.io/Ravendev/wp-includes/css/dashicons.min.css?ver=5.5.3' type='text/css' media='all' />
+<link rel='stylesheet' id='jquery-magnificpopup-css'  href='/https://andrie0604.github.io/Ravendev/wp-content/plugins/bb-plugin/css/jquery.magnificpopup.min.css?ver=2.4.0.2' type='text/css' media='all' />
+<link rel='stylesheet' id='base-css'  href='/https://andrie0604.github.io/Ravendev/wp-content/themes/bb-theme/css/base.min.css?ver=1.7.3' type='text/css' media='all' />
+<link rel='stylesheet' id='fl-automator-skin-css'  href='/https://andrie0604.github.io/Ravendev/wp-content/uploads/bb-theme/skin-5fe7363410a02.css?ver=1.7.3' type='text/css' media='all' />
+<link rel='stylesheet' id='fl-builder-google-fonts-e66c201de83efa52edad90af15bf0bf0-css'  href='//fonts.googleapis.com/css?family=Play%3A400%2C700&#038;ver=5.5.3' type='text/css' media='all' />
+<script type='text/javascript' src='/https://andrie0604.github.io/Ravendev/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp' id='jquery-core-js'></script>
+<script type='text/javascript' src='/https://andrie0604.github.io/Ravendev/wp-includes/js/imagesloaded.min.js?ver=5.5.3' id='imagesloaded-js'></script>
+<link rel="https://api.w.org/" href="/https://andrie0604.github.io/Ravendev/wp-json/" /><link rel="alternate" type="application/json" href="/https://andrie0604.github.io/Ravendev/wp-json/wp/v2/pages/5" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="/https://andrie0604.github.io/Ravendev/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/https://andrie0604.github.io/Ravendev/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.5.3" />
+<link rel="canonical" href="/https://andrie0604.github.io/Ravendev/" />
+<link rel='shortlink' href='/https://andrie0604.github.io/Ravendev/' />
+<link rel="alternate" type="application/json+oembed" href="/https://andrie0604.github.io/Ravendev/wp-json/oembed/1.0/embed?url=%2F" />
+<link rel="alternate" type="text/xml+oembed" href="/https://andrie0604.github.io/Ravendev/wp-json/oembed/1.0/embed?url=%2F&#038;format=xml" />
+<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><link rel="icon" href="/https://andrie0604.github.io/Ravendev/wp-content/uploads/2020/12/RD-Icon.png" sizes="32x32" />
+<link rel="icon" href="/https://andrie0604.github.io/Ravendev/wp-content/uploads/2020/12/RD-Icon.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="/https://andrie0604.github.io/Ravendev/wp-content/uploads/2020/12/RD-Icon.png" />
+<meta name="msapplication-TileImage" content="/wp-content/uploads/2020/12/RD-Icon.png" />
+<style type="text/css">/** Mega Menu CSS: fs **/</style>
+</head>
+<body class="home page-template-default page page-id-5 fl-builder fl-theme-builder-header fl-theme-builder-footer fl-framework-base fl-preset-default fl-full-width fl-search-active" itemscope="itemscope" itemtype="https://schema.org/WebPage">
+<div class="fl-page">
+	<header class="fl-builder-content fl-builder-content-7 fl-builder-global-templates-locked" data-post-id="7" itemscope="itemscope" itemtype="http://schema.org/WPHeader" data-type="header" data-sticky="1" data-sticky-breakpoint="medium" data-shrink="1" data-overlay="1" data-overlay-bg="transparent"><div class="fl-row fl-row-full-width fl-row-bg-photo fl-node-5fe6a6238343e fl-row-bg-overlay" data-node="5fe6a6238343e">
+	<div class="fl-row-content-wrap">
+						<div class="fl-row-content fl-row-full-width fl-node-content">
+		
+<div class="fl-col-group fl-node-5fe6a6238344b fl-col-group-equal-height fl-col-group-align-center fl-col-group-custom-width" data-node="5fe6a6238344b">
+			<div class="fl-col fl-node-5fe6a66dd35d9 fl-col-small" data-node="5fe6a66dd35d9">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-photo fl-node-5fe6e51c536ba fl-animation fl-fade-left" data-node="5fe6e51c536ba" data-animation-delay="0" data-animation-duration="1">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-photo fl-photo-align-left" itemscope itemtype="https://schema.org/ImageObject">
+	<div class="fl-photo-content fl-photo-img-png">
+				<a href="/https://andrie0604.github.io/Ravendev/" target="_self" itemprop="url">
+				<img loading="lazy" class="fl-photo-img wp-image-10 size-full" src="/https://andrie0604.github.io/Ravendev/wp-content/uploads/2020/12/RD-Icon.png" alt="RD-Icon" itemprop="image" height="87" width="134" title="RD-Icon"  data-no-lazy="1" />
+				</a>
+					</div>
+	</div>
+	</div>
+</div>
+	</div>
+</div>
+			<div class="fl-col fl-node-5fe6a62383451 fl-col-small" data-node="5fe6a62383451">
+	<div class="fl-col-content fl-node-content">
+		</div>
+</div>
+			<div class="fl-col fl-node-5fe6a684442c7 fl-col-small" data-node="5fe6a684442c7">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-uabb-advanced-menu fl-node-5fe72be49fd97 fl-animation fl-fade-right" data-node="5fe72be49fd97" data-animation-delay="0" data-animation-duration="1">
+	<div class="fl-module-content fl-node-content">
+				<div class="uabb-creative-menu-mobile-toggle-container"><div class="uabb-creative-menu-mobile-toggle hamburger"><div class="uabb-svg-container"><svg version="1.1" class="hamburger-menu" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 512 512">
+<rect class="fl-hamburger-menu-top" width="512" height="102"/>
+<rect class="fl-hamburger-menu-middle" y="205" width="512" height="102"/>
+<rect class="fl-hamburger-menu-bottom" y="410" width="512" height="102"/>
+</svg>
+</div></div></div>            <div class="uabb-creative-menu uabb-creative-menu-accordion-collapse off-canvas">
+                <div class="uabb-clear"></div>
+                <div class="uabb-off-canvas-menu uabb-menu-right"> <div class="uabb-menu-close-btn">×</div>                        <ul id="menu-ravendev-main-menu" class="menu uabb-creative-menu-accordion uabb-toggle-arrows"><li id="menu-item-28" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home uabb-creative-menu uabb-cm-style"><a href="/https://andrie0604.github.io/Ravendev/"><span class="menu-item-text">Home</span></a></li>
+<li id="menu-item-29" class="menu-item menu-item-type-custom menu-item-object-custom uabb-creative-menu uabb-cm-style"><a href="/https://andrie0604.github.io/Ravendev/about-me/"><span class="menu-item-text">About Me</span></a></li>
+<li id="menu-item-128" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children uabb-has-submenu uabb-creative-menu uabb-cm-style"><div class="uabb-has-submenu-container"><a href="/https://andrie0604.github.io/Ravendev/services"><span class="menu-item-text">Services<span class="uabb-menu-toggle"></span></span></a></div>
+<ul class="sub-menu">
+	<li id="menu-item-143" class="menu-item menu-item-type-custom menu-item-object-custom uabb-creative-menu uabb-cm-style"><a href="/https://andrie0604.github.io/Ravendev/web-development/"><span class="menu-item-text">Web Development</span></a></li>
+	<li id="menu-item-144" class="menu-item menu-item-type-custom menu-item-object-custom uabb-creative-menu uabb-cm-style"><a href="/https://andrie0604.github.io/Ravendev/it-network-services/"><span class="menu-item-text">IT &#038; Network Services</span></a></li>
+</ul>
+</li>
+<li id="menu-item-31" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children uabb-has-submenu uabb-creative-menu uabb-cm-style"><div class="uabb-has-submenu-container"><a href="#projects"><span class="menu-item-text">Projects<span class="uabb-menu-toggle"></span></span></a></div>
+<ul class="sub-menu">
+	<li id="menu-item-135" class="menu-item menu-item-type-custom menu-item-object-custom uabb-creative-menu uabb-cm-style"><a href="#gtx-gaming"><span class="menu-item-text">GTXGaming</span></a></li>
+	<li id="menu-item-136" class="menu-item menu-item-type-custom menu-item-object-custom uabb-creative-menu uabb-cm-style"><a href="#strix-servers"><span class="menu-item-text">StrixServer</span></a></li>
+	<li id="menu-item-141" class="menu-item menu-item-type-custom menu-item-object-custom uabb-creative-menu uabb-cm-style"><a href="#abc-game-servers"><span class="menu-item-text">ABC Game Servers</span></a></li>
+	<li id="menu-item-139" class="menu-item menu-item-type-custom menu-item-object-custom uabb-creative-menu uabb-cm-style"><a href="#gaming-deluxe"><span class="menu-item-text">Gaming Deluxe</span></a></li>
+	<li id="menu-item-140" class="menu-item menu-item-type-custom menu-item-object-custom uabb-creative-menu uabb-cm-style"><a href="#craft-and-survive"><span class="menu-item-text">Craft &#038; Survive</span></a></li>
+	<li id="menu-item-142" class="menu-item menu-item-type-custom menu-item-object-custom uabb-creative-menu uabb-cm-style"><a href="#myblackbox-hosting"><span class="menu-item-text">MyBlackbox Hosting</span></a></li>
+	<li id="menu-item-137" class="menu-item menu-item-type-custom menu-item-object-custom uabb-creative-menu uabb-cm-style"><a href="#abl-electromech"><span class="menu-item-text">ABL Electromechanical</span></a></li>
+</ul>
+</li>
+<li id="menu-item-30" class="menu-item menu-item-type-custom menu-item-object-custom uabb-creative-menu uabb-cm-style"><a href="/https://andrie0604.github.io/Ravendev/contacts/"><span class="menu-item-text">Contacts</span></a></li>
+<li id="menu-item-129" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children uabb-has-submenu uabb-creative-menu uabb-cm-style"><div class="uabb-has-submenu-container"><a href="#"><span class="menu-item-text">Social Media<span class="uabb-menu-toggle"></span></span></a></div>
+<ul class="sub-menu">
+	<li id="menu-item-130" class="menu-item menu-item-type-custom menu-item-object-custom uabb-creative-menu uabb-cm-style"><a href="http://www.facebook.com/Andrie.XD"><span class="menu-item-text"><span class="menu-image-title-hide menu-image-title">Facebook</span><span class="dashicons dashicons-facebook-alt hide-menu-image-icons"></span></span></a></li>
+	<li id="menu-item-131" class="menu-item menu-item-type-custom menu-item-object-custom uabb-creative-menu uabb-cm-style"><a href="https://www.linkedin.com/in/leandro-andrie-ventura-804013159/"><span class="menu-item-text"><span class="menu-image-title-hide menu-image-title">LinkedIn</span><span class="dashicons dashicons-linkedin hide-menu-image-icons"></span></span></a></li>
+	<li id="menu-item-132" class="menu-item menu-item-type-custom menu-item-object-custom uabb-creative-menu uabb-cm-style"><a href="mailto:andrie0604@gmail.com"><span class="menu-item-text"><span class="menu-image-title-hide menu-image-title">Mail</span><span class="dashicons dashicons-admin-comments hide-menu-image-icons"></span></span></a></li>
+</ul>
+</li>
+</ul>                </div>
+            </div>
+        	</div>
+</div>
+	</div>
+</div>
+	</div>
+		</div>
+	</div>
+</div>
+</header><div id="uabb-js-breakpoint" class="uabb-js-breakpoint" style="display: none;"></div>	<div class="fl-page-content" itemprop="mainContentOfPage">
+
+		
+<div class="fl-content-full container">
+	<div class="row">
+		<div class="fl-content col-md-12">
+			<article class="fl-post post-5 page type-page status-publish hentry" id="fl-post-5" itemscope="itemscope" itemtype="https://schema.org/CreativeWork">
+
+			<div class="fl-post-content clearfix" itemprop="text">
+		<div class="fl-builder-content fl-builder-content-5 fl-builder-content-primary fl-builder-global-templates-locked" data-post-id="5"><div class="fl-row fl-row-full-width fl-row-bg-photo fl-node-5fe8b4aedf9f0 fl-row-bg-overlay" data-node="5fe8b4aedf9f0">
+	<div class="fl-row-content-wrap">
+						<div class="fl-row-content fl-row-full-width fl-node-content">
+		
+<div class="fl-col-group fl-node-5fe8b4af0d699" data-node="5fe8b4af0d699">
+			<div class="fl-col fl-node-5fe8b4af0d860 fl-col-small" data-node="5fe8b4af0d860">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-rich-text fl-node-5fe8b5209bafd fl-animation fl-fade-up" data-node="5fe8b5209bafd" data-animation-delay="0" data-animation-duration="1">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p>The Next Level<br />
+IT Design &amp; Development</p>
+</div>
+	</div>
+</div>
+<div class="fl-module fl-module-advanced-separator fl-node-5fe8b7670692e fl-animation fl-fade-left" data-node="5fe8b7670692e" data-animation-delay="0" data-animation-duration="1">
+	<div class="fl-module-content fl-node-content">
+		<div class="uabb-module-content uabb-separator-parent">
+	
+	
+			<div class="uabb-separator"></div>
+	</div>	</div>
+</div>
+<div class="fl-module fl-module-rich-text fl-node-5fe8b7b54eddd fl-animation fl-fade-up" data-node="5fe8b7b54eddd" data-animation-delay="0" data-animation-duration="1">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p>You have the amazing vision for awesome modern and fun digital experience. And I will help you and your ideas, designs and imaginations to bring it to life.</p>
+</div>
+	</div>
+</div>
+<div class="fl-module fl-module-advanced-separator fl-node-5fe8cc235fb2c fl-animation fl-fade-left" data-node="5fe8cc235fb2c" data-animation-delay="0" data-animation-duration="1">
+	<div class="fl-module-content fl-node-content">
+		<div class="uabb-module-content uabb-separator-parent">
+	
+	
+			<div class="uabb-separator"></div>
+	</div>	</div>
+</div>
+<div class="fl-module fl-module-button fl-node-5fe8b8b0eaf45 fl-animation fl-fade-left" data-node="5fe8b8b0eaf45" data-animation-delay="0" data-animation-duration="1">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-button-wrap fl-button-width-auto fl-button-left fl-button-has-icon">
+			<a href="/https://andrie0604.github.io/Ravendev/wp-content/uploads/2021/01/LeandroVenturaResume-1.pdf" download target="_self" class="fl-button fl-button-icon-animation" role="button">
+							<span class="fl-button-text">Hire Me!</span>
+						<i class="fl-button-icon fl-button-icon-after ua-icon ua-icon-fast-forward" aria-hidden="true"></i>
+			</a>
+</div>
+	</div>
+</div>
+	</div>
+</div>
+			<div class="fl-col fl-node-5fe8b4af0d86c fl-col-small" data-node="5fe8b4af0d86c">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-uabb-photo fl-node-5fe8b60300e01 fl-animation fl-fade-right" data-node="5fe8b60300e01" data-animation-delay="0" data-animation-duration="1">
+	<div class="fl-module-content fl-node-content">
+		<div class="uabb-module-content uabb-photo uabb-photo-align-center uabb-photo-mob-align-center" itemscope itemtype="http://schema.org/ImageObject">
+	<div class="uabb-photo-content">
+
+				<img loading="lazy" width="300" height="300" class="uabb-photo-img wp-image-111 size-medium" src="/https://andrie0604.github.io/Ravendev/wp-content/uploads/2020/12/Image-300x300.png" alt="Image" itemprop="image" srcset="/https://andrie0604.github.io/Ravendev/wp-content/uploads/2020/12/Image-300x300.png 300w, /https://andrie0604.github.io/Ravendev/wp-content/uploads/2020/12/Image-150x150.png 150w, /https://andrie0604.github.io/Ravendev/wp-content/uploads/2020/12/Image-24x24.png 24w, /https://andrie0604.github.io/Ravendev/wp-content/uploads/2020/12/Image-36x36.png 36w, /https://andrie0604.github.io/Ravendev/wp-content/uploads/2020/12/Image-48x48.png 48w, /https://andrie0604.github.io/Ravendev/wp-content/uploads/2020/12/Image.png 550w" sizes="(max-width: 300px) 100vw, 300px" />
+
+					</div>
+	</div>	</div>
+</div>
+	</div>
+</div>
+			<div class="fl-col fl-node-5fe8b4af0d871 fl-col-small" data-node="5fe8b4af0d871">
+	<div class="fl-col-content fl-node-content">
+		</div>
+</div>
+	</div>
+
+<div class="fl-col-group fl-node-5fe8b957c5d8e" data-node="5fe8b957c5d8e">
+			<div class="fl-col fl-node-5fe8b957c5eea fl-col-has-cols" data-node="5fe8b957c5eea">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-advanced-separator fl-node-5fe8b957c5cb3 fl-animation fl-fade-up" data-node="5fe8b957c5cb3" data-animation-delay="0" data-animation-duration="1">
+	<div class="fl-module-content fl-node-content">
+		<div class="uabb-module-content uabb-separator-parent">
+	
+	
+			<div class="uabb-separator"></div>
+	</div>	</div>
+</div>
+
+<div class="fl-col-group fl-node-5fe8ba58a7e5a fl-col-group-nested" data-node="5fe8ba58a7e5a">
+			<div class="fl-col fl-node-5fe8ba58a80f9 fl-col-small" data-node="5fe8ba58a80f9">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-rich-text fl-node-5fe8bac50a929 fl-animation fl-fade-up" data-node="5fe8bac50a929" data-animation-delay="0" data-animation-duration="1">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p>Services Ravendev Offers....</p>
+</div>
+	</div>
+</div>
+	</div>
+</div>
+			<div class="fl-col fl-node-5fe8ba58a8105 fl-col-small" data-node="5fe8ba58a8105">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-icon fl-node-5fe8bb4bbd76e fl-animation fl-fade-up" data-node="5fe8bb4bbd76e" data-animation-delay="0" data-animation-duration="1">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-icon-wrap">
+	<span class="fl-icon">
+				<i class="fas fa-code" aria-hidden="true"></i>
+					</span>
+			<div id="fl-icon-text-5fe8bb4bbd76e" class="fl-icon-text fl-icon-text-wrap">
+						<p>Web Development</p>					</div>
+	</div>
+	</div>
+</div>
+	</div>
+</div>
+			<div class="fl-col fl-node-5fe8ba58a810a fl-col-small" data-node="5fe8ba58a810a">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-icon fl-node-5fe8bbdba35fd fl-animation fl-fade-up" data-node="5fe8bbdba35fd" data-animation-delay="0" data-animation-duration="1">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-icon-wrap">
+	<span class="fl-icon">
+				<i class="fas fa-cubes" aria-hidden="true"></i>
+					</span>
+			<div id="fl-icon-text-5fe8bbdba35fd" class="fl-icon-text fl-icon-text-wrap">
+						<p>Network Infrastructure</p>					</div>
+	</div>
+	</div>
+</div>
+	</div>
+</div>
+			<div class="fl-col fl-node-5fe8ba58a810e fl-col-small" data-node="5fe8ba58a810e">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-icon fl-node-5fe8bc5f482f4 fl-animation fl-fade-up" data-node="5fe8bc5f482f4" data-animation-delay="0" data-animation-duration="1">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-icon-wrap">
+	<span class="fl-icon">
+				<i class="fas fa-project-diagram" aria-hidden="true"></i>
+					</span>
+			<div id="fl-icon-text-5fe8bc5f482f4" class="fl-icon-text fl-icon-text-wrap">
+						<p>IT Services and Solution</p>					</div>
+	</div>
+	</div>
+</div>
+	</div>
+</div>
+	</div>
+	</div>
+</div>
+	</div>
+		</div>
+	</div>
+</div>
+<div class="fl-row fl-row-full-width fl-row-bg-color fl-node-5fe8aa761f378" data-node="5fe8aa761f378">
+	<div class="fl-row-content-wrap">
+						<div class="fl-row-content fl-row-full-width fl-node-content">
+		
+<div class="fl-col-group fl-node-5fe8aa76a0e51" data-node="5fe8aa76a0e51">
+			<div class="fl-col fl-node-5fe8aa76a1129" data-node="5fe8aa76a1129">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-uabb-advanced-menu fl-node-5fe8aa761f0f6 fl-animation fl-fade-left" data-node="5fe8aa761f0f6" data-animation-delay="0" data-animation-duration="1">
+	<div class="fl-module-content fl-node-content">
+			<div class="uabb-creative-menu uabb-creative-menu-accordion-collapse uabb-menu-default">
+		<div class="uabb-creative-menu-mobile-toggle-container"><div class="uabb-creative-menu-mobile-toggle hamburger"><div class="uabb-svg-container"><svg version="1.1" class="hamburger-menu" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 512 512">
+<rect class="fl-hamburger-menu-top" width="512" height="102"/>
+<rect class="fl-hamburger-menu-middle" y="205" width="512" height="102"/>
+<rect class="fl-hamburger-menu-bottom" y="410" width="512" height="102"/>
+</svg>
+</div></div></div>		    <div class="uabb-clear"></div>
+		   	        <ul id="menu-ravendev-main-menu-1" class="menu uabb-creative-menu-horizontal uabb-toggle-none"><li id="menu-item-28" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home uabb-creative-menu uabb-cm-style"><a href="/https://andrie0604.github.io/Ravendev/"><span class="menu-item-text">Home</span></a></li>
+<li id="menu-item-29" class="menu-item menu-item-type-custom menu-item-object-custom uabb-creative-menu uabb-cm-style"><a href="/https://andrie0604.github.io/Ravendev/about-me/"><span class="menu-item-text">About Me</span></a></li>
+<li id="menu-item-128" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children uabb-has-submenu uabb-creative-menu uabb-cm-style"><div class="uabb-has-submenu-container"><a href="/https://andrie0604.github.io/Ravendev/services"><span class="menu-item-text">Services<span class="uabb-menu-toggle"></span></span></a></div>
+<ul class="sub-menu">
+	<li id="menu-item-143" class="menu-item menu-item-type-custom menu-item-object-custom uabb-creative-menu uabb-cm-style"><a href="/https://andrie0604.github.io/Ravendev/web-development/"><span class="menu-item-text">Web Development</span></a></li>
+	<li id="menu-item-144" class="menu-item menu-item-type-custom menu-item-object-custom uabb-creative-menu uabb-cm-style"><a href="/https://andrie0604.github.io/Ravendev/it-network-services/"><span class="menu-item-text">IT &#038; Network Services</span></a></li>
+</ul>
+</li>
+<li id="menu-item-31" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children uabb-has-submenu uabb-creative-menu uabb-cm-style"><div class="uabb-has-submenu-container"><a href="#projects"><span class="menu-item-text">Projects<span class="uabb-menu-toggle"></span></span></a></div>
+<ul class="sub-menu">
+	<li id="menu-item-135" class="menu-item menu-item-type-custom menu-item-object-custom uabb-creative-menu uabb-cm-style"><a href="#gtx-gaming"><span class="menu-item-text">GTXGaming</span></a></li>
+	<li id="menu-item-136" class="menu-item menu-item-type-custom menu-item-object-custom uabb-creative-menu uabb-cm-style"><a href="#strix-servers"><span class="menu-item-text">StrixServer</span></a></li>
+	<li id="menu-item-141" class="menu-item menu-item-type-custom menu-item-object-custom uabb-creative-menu uabb-cm-style"><a href="#abc-game-servers"><span class="menu-item-text">ABC Game Servers</span></a></li>
+	<li id="menu-item-139" class="menu-item menu-item-type-custom menu-item-object-custom uabb-creative-menu uabb-cm-style"><a href="#gaming-deluxe"><span class="menu-item-text">Gaming Deluxe</span></a></li>
+	<li id="menu-item-140" class="menu-item menu-item-type-custom menu-item-object-custom uabb-creative-menu uabb-cm-style"><a href="#craft-and-survive"><span class="menu-item-text">Craft &#038; Survive</span></a></li>
+	<li id="menu-item-142" class="menu-item menu-item-type-custom menu-item-object-custom uabb-creative-menu uabb-cm-style"><a href="#myblackbox-hosting"><span class="menu-item-text">MyBlackbox Hosting</span></a></li>
+	<li id="menu-item-137" class="menu-item menu-item-type-custom menu-item-object-custom uabb-creative-menu uabb-cm-style"><a href="#abl-electromech"><span class="menu-item-text">ABL Electromechanical</span></a></li>
+</ul>
+</li>
+<li id="menu-item-30" class="menu-item menu-item-type-custom menu-item-object-custom uabb-creative-menu uabb-cm-style"><a href="/https://andrie0604.github.io/Ravendev/contacts/"><span class="menu-item-text">Contacts</span></a></li>
+<li id="menu-item-129" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children uabb-has-submenu uabb-creative-menu uabb-cm-style"><div class="uabb-has-submenu-container"><a href="#"><span class="menu-item-text">Social Media<span class="uabb-menu-toggle"></span></span></a></div>
+<ul class="sub-menu">
+	<li id="menu-item-130" class="menu-item menu-item-type-custom menu-item-object-custom uabb-creative-menu uabb-cm-style"><a href="http://www.facebook.com/Andrie.XD"><span class="menu-item-text"><span class="menu-image-title-hide menu-image-title">Facebook</span><span class="dashicons dashicons-facebook-alt hide-menu-image-icons"></span></span></a></li>
+	<li id="menu-item-131" class="menu-item menu-item-type-custom menu-item-object-custom uabb-creative-menu uabb-cm-style"><a href="https://www.linkedin.com/in/leandro-andrie-ventura-804013159/"><span class="menu-item-text"><span class="menu-image-title-hide menu-image-title">LinkedIn</span><span class="dashicons dashicons-linkedin hide-menu-image-icons"></span></span></a></li>
+	<li id="menu-item-132" class="menu-item menu-item-type-custom menu-item-object-custom uabb-creative-menu uabb-cm-style"><a href="mailto:andrie0604@gmail.com"><span class="menu-item-text"><span class="menu-image-title-hide menu-image-title">Mail</span><span class="dashicons dashicons-admin-comments hide-menu-image-icons"></span></span></a></li>
+</ul>
+</li>
+</ul>	</div>
+
+		</div>
+</div>
+	</div>
+</div>
+	</div>
+
+<div class="fl-col-group fl-node-5fe8ad3b8061c" data-node="5fe8ad3b8061c">
+			<div class="fl-col fl-node-5fe8ad3b806f3" data-node="5fe8ad3b806f3">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-advanced-separator fl-node-5fe8ad3b805a4 fl-animation fl-fade-up" data-node="5fe8ad3b805a4" data-animation-delay="0" data-animation-duration="1">
+	<div class="fl-module-content fl-node-content">
+		<div class="uabb-module-content uabb-separator-parent">
+	
+	
+			<div class="uabb-separator"></div>
+	</div>	</div>
+</div>
+	</div>
+</div>
+	</div>
+		</div>
+	</div>
+</div>
+<div class="fl-row fl-row-full-width fl-row-bg-photo fl-node-5fe6aa11171c1 fl-row-bg-overlay" data-node="5fe6aa11171c1">
+	<div class="fl-row-content-wrap">
+						<div class="fl-row-content fl-row-full-width fl-node-content">
+		
+<div class="fl-col-group fl-node-5fe6aa1123b97" data-node="5fe6aa1123b97">
+			<div class="fl-col fl-node-5fe6aa1123dc9 fl-col-small" data-node="5fe6aa1123dc9">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-rich-text fl-node-5ffae1a4c9ea1 fl-animation fl-fade-up" data-node="5ffae1a4c9ea1" data-animation-delay="0" data-animation-duration="1">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p>Hi, I'm Ravendev, a</p>
+</div>
+	</div>
+</div>
+	</div>
+</div>
+			<div class="fl-col fl-node-5ffae206dbfa9 fl-col-small" data-node="5ffae206dbfa9">
+	<div class="fl-col-content fl-node-content">
+		</div>
+</div>
+	</div>
+
+<div class="fl-col-group fl-node-5ffae2121cdbd" data-node="5ffae2121cdbd">
+			<div class="fl-col fl-node-5ffae2121d39c fl-col-small" data-node="5ffae2121d39c">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-fancy-text fl-node-5ffae2476ea56" data-node="5ffae2476ea56">
+	<div class="fl-module-content fl-node-content">
+		<div class="uabb-module-content uabb-fancy-text-node">
+<h1 class="uabb-fancy-text-wrap uabb-fancy-text-type"><!--
+	--><span class="uabb-fancy-text-prefix"></span><!--	--><span class="uabb-fancy-text-main uabb-typed-main-wrap"><span class="uabb-typed-main"></span></span><!--	
+	--><span class="uabb-fancy-text-suffix"></span>
+</h1></div>	</div>
+</div>
+	</div>
+</div>
+			<div class="fl-col fl-node-5ffae2121d3ae fl-col-small" data-node="5ffae2121d3ae">
+	<div class="fl-col-content fl-node-content">
+		</div>
+</div>
+	</div>
+
+<div class="fl-col-group fl-node-5ffaec1cbf5af" data-node="5ffaec1cbf5af">
+			<div class="fl-col fl-node-5ffaec1cbfdb7 fl-col-small" data-node="5ffaec1cbfdb7">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-dual-button fl-node-5ffaec37997dc fl-animation fl-fade-left" data-node="5ffaec37997dc" data-animation-delay="0" data-animation-duration="1">
+	<div class="fl-module-content fl-node-content">
+		<div class="uabb-module-content uabb-dual-button uabb-align-left">
+	<div class="uabb-dual-button-wrapper uabb-horizontal uabb-horizontal-auto">
+		<div class="uabb-dual-button-one uabb-btn-horizontal">
+			<a class="uabb-btn uabb-btn-one uabb-transparent-fade" href="#projects" target="_self" >
+								<span class="uabb-btn-one-text">Projects Worked With</span>
+							</a>
+					</div>
+		<div class="uabb-dual-button-two uabb-btn-horizontal">
+			<a class="uabb-btn uabb-btn-two uabb-transparent-fade" href="/https://andrie0604.github.io/Ravendev/services/" target="_self" >
+								<span class="uabb-btn-two-text">Services Offered</span>
+							</a>
+		</div>
+	</div>
+</div>	</div>
+</div>
+	</div>
+</div>
+			<div class="fl-col fl-node-5ffaec1cbfdd8 fl-col-small" data-node="5ffaec1cbfdd8">
+	<div class="fl-col-content fl-node-content">
+		</div>
+</div>
+	</div>
+		</div>
+	</div>
+</div>
+<div class="fl-row fl-row-full-width fl-row-bg-photo fl-node-5ffb0e32de260 fl-row-bg-overlay" data-node="5ffb0e32de260">
+	<div class="fl-row-content-wrap">
+						<div class="fl-row-content fl-row-fixed-width fl-node-content">
+		
+<div class="fl-col-group fl-node-5ffb0e330eb18" data-node="5ffb0e330eb18">
+			<div class="fl-col fl-node-5ffb0e330ecb7 fl-col-small" data-node="5ffb0e330ecb7">
+	<div class="fl-col-content fl-node-content">
+		</div>
+</div>
+			<div class="fl-col fl-node-5ffb0e330ecbd" data-node="5ffb0e330ecbd">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-fancy-text fl-node-5ffb0f2ceb15f" data-node="5ffb0f2ceb15f">
+	<div class="fl-module-content fl-node-content">
+		<div class="uabb-module-content uabb-fancy-text-node">
+<h2 class="uabb-fancy-text-wrap uabb-fancy-text-type"><!--
+	--><span class="uabb-fancy-text-prefix"></span><!--	--><span class="uabb-fancy-text-main uabb-typed-main-wrap"><span class="uabb-typed-main"></span></span><!--	
+	--><span class="uabb-fancy-text-suffix"></span>
+</h2></div>	</div>
+</div>
+	</div>
+</div>
+			<div class="fl-col fl-node-5ffb0e330ecc1 fl-col-small" data-node="5ffb0e330ecc1">
+	<div class="fl-col-content fl-node-content">
+		</div>
+</div>
+	</div>
+
+<div class="fl-col-group fl-node-5ffb0ffca74d5" data-node="5ffb0ffca74d5">
+			<div class="fl-col fl-node-5ffb0ffca7656 fl-col-small" data-node="5ffb0ffca7656">
+	<div class="fl-col-content fl-node-content">
+		</div>
+</div>
+			<div class="fl-col fl-node-5ffb0ffca765c" data-node="5ffb0ffca765c">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-progress-bar fl-node-5ffb119005f7a fl-animation fl-fade-up" data-node="5ffb119005f7a" data-animation-delay="0" data-animation-duration="1">
+	<div class="fl-module-content fl-node-content">
+		<div class="uabb-module-content uabb-pb-container">
+	<ul class="uabb-pb-list">
+		<li>
+			<div class="uabb-progress-bar-wrapper uabb-vertical-center uabb-layout-horizontal uabb-progress-bar-style-style3 uabb-progress-bar-0" data-number="90">
+				<div class="uabb-progress-wrap">
+                    <div class="uabb-progress-box">
+                        <div class="uabb-progress-bar"></div>
+                        <div class="uabb-progress-info uabb-progress-bar-info-0">
+                            <h4 class="uabb-progress-title">WordPress</h4>
+                            <div class="uabb-progress-value">0%</div>
+                        </div>
+                    </div>
+                </div>			</div>
+		</li><li>
+			<div class="uabb-progress-bar-wrapper uabb-vertical-center uabb-layout-horizontal uabb-progress-bar-style-style3 uabb-progress-bar-1" data-number="85">
+				<div class="uabb-progress-wrap">
+                    <div class="uabb-progress-box">
+                        <div class="uabb-progress-bar"></div>
+                        <div class="uabb-progress-info uabb-progress-bar-info-1">
+                            <h4 class="uabb-progress-title">JavaScript</h4>
+                            <div class="uabb-progress-value">0%</div>
+                        </div>
+                    </div>
+                </div>			</div>
+		</li><li>
+			<div class="uabb-progress-bar-wrapper uabb-vertical-center uabb-layout-horizontal uabb-progress-bar-style-style3 uabb-progress-bar-2" data-number="85">
+				<div class="uabb-progress-wrap">
+                    <div class="uabb-progress-box">
+                        <div class="uabb-progress-bar"></div>
+                        <div class="uabb-progress-info uabb-progress-bar-info-2">
+                            <h4 class="uabb-progress-title">HTML</h4>
+                            <div class="uabb-progress-value">0%</div>
+                        </div>
+                    </div>
+                </div>			</div>
+		</li><li>
+			<div class="uabb-progress-bar-wrapper uabb-vertical-center uabb-layout-horizontal uabb-progress-bar-style-style3 uabb-progress-bar-3" data-number="75">
+				<div class="uabb-progress-wrap">
+                    <div class="uabb-progress-box">
+                        <div class="uabb-progress-bar"></div>
+                        <div class="uabb-progress-info uabb-progress-bar-info-3">
+                            <h4 class="uabb-progress-title">CSS</h4>
+                            <div class="uabb-progress-value">0%</div>
+                        </div>
+                    </div>
+                </div>			</div>
+		</li><li>
+			<div class="uabb-progress-bar-wrapper uabb-vertical-center uabb-layout-horizontal uabb-progress-bar-style-style3 uabb-progress-bar-4" data-number="70">
+				<div class="uabb-progress-wrap">
+                    <div class="uabb-progress-box">
+                        <div class="uabb-progress-bar"></div>
+                        <div class="uabb-progress-info uabb-progress-bar-info-4">
+                            <h4 class="uabb-progress-title">Php</h4>
+                            <div class="uabb-progress-value">0%</div>
+                        </div>
+                    </div>
+                </div>			</div>
+		</li><li>
+			<div class="uabb-progress-bar-wrapper uabb-vertical-center uabb-layout-horizontal uabb-progress-bar-style-style3 uabb-progress-bar-5" data-number="70">
+				<div class="uabb-progress-wrap">
+                    <div class="uabb-progress-box">
+                        <div class="uabb-progress-bar"></div>
+                        <div class="uabb-progress-info uabb-progress-bar-info-5">
+                            <h4 class="uabb-progress-title">MySQL</h4>
+                            <div class="uabb-progress-value">0%</div>
+                        </div>
+                    </div>
+                </div>			</div>
+		</li><li>
+			<div class="uabb-progress-bar-wrapper uabb-vertical-center uabb-layout-horizontal uabb-progress-bar-style-style3 uabb-progress-bar-6" data-number="80">
+				<div class="uabb-progress-wrap">
+                    <div class="uabb-progress-box">
+                        <div class="uabb-progress-bar"></div>
+                        <div class="uabb-progress-info uabb-progress-bar-info-6">
+                            <h4 class="uabb-progress-title">System Administration</h4>
+                            <div class="uabb-progress-value">0%</div>
+                        </div>
+                    </div>
+                </div>			</div>
+		</li><li>
+			<div class="uabb-progress-bar-wrapper uabb-vertical-center uabb-layout-horizontal uabb-progress-bar-style-style3 uabb-progress-bar-7" data-number="80">
+				<div class="uabb-progress-wrap">
+                    <div class="uabb-progress-box">
+                        <div class="uabb-progress-bar"></div>
+                        <div class="uabb-progress-info uabb-progress-bar-info-7">
+                            <h4 class="uabb-progress-title">Network Engineering</h4>
+                            <div class="uabb-progress-value">0%</div>
+                        </div>
+                    </div>
+                </div>			</div>
+		</li></ul>
+</div>			</div>
+</div>
+	</div>
+</div>
+			<div class="fl-col fl-node-5ffb0ffca7660 fl-col-small" data-node="5ffb0ffca7660">
+	<div class="fl-col-content fl-node-content">
+		</div>
+</div>
+	</div>
+		</div>
+	</div>
+</div>
+<div class="fl-row fl-row-full-width fl-row-bg-color fl-node-6016c7f949433" data-node="6016c7f949433">
+	<div class="fl-row-content-wrap">
+						<div class="fl-row-content fl-row-fixed-width fl-node-content">
+		
+<div class="fl-col-group fl-node-6016c7fac82bd" data-node="6016c7fac82bd">
+			<div class="fl-col fl-node-6016c7fac848d fl-col-has-cols" data-node="6016c7fac848d">
+	<div class="fl-col-content fl-node-content">
+	<section id="projects" class="fl-module fl-module-rich-text fl-node-6016c803cb53f" data-node="6016c803cb53f">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p>Projects</p>
+</div>
+	</div>
+</section>
+<div class="fl-module fl-module-advanced-separator fl-node-6016eddb507e5" data-node="6016eddb507e5">
+	<div class="fl-module-content fl-node-content">
+		<div class="uabb-module-content uabb-separator-parent">
+	
+	
+			<div class="uabb-separator"></div>
+	</div>	</div>
+</div>
+
+<div class="fl-col-group fl-node-6016d988397ad fl-col-group-nested" data-node="6016d988397ad">
+			<div class="fl-col fl-node-6016d988398cd" data-node="6016d988398cd">
+	<div class="fl-col-content fl-node-content">
+	<section id="gtx-gaming" class="fl-module fl-module-interactive-banner-2 fl-node-6016e1aa57cf5" data-node="6016e1aa57cf5">
+	<div class="fl-module-content fl-node-content">
+		
+<div class="uabb-module-content uabb-ib2-outter uabb-new-ib uabb-ib-effect-style11" >
+			<img class="uabb-new-ib-img" src="/https://andrie0604.github.io/Ravendev/wp-content/uploads/2021/01/gtxgaming-logo-long-2.png" alt="GTXGamingLogo">
+		<div class="uabb-new-ib-desc">
+			<div class="uabb-new-ib-content uabb-text-editor uabb-simplify"></div>
+	</div>
+	</div>
+	</div>
+</section>
+	</div>
+</div>
+	</div>
+
+<div class="fl-col-group fl-node-6016e3a40bb16 fl-col-group-nested" data-node="6016e3a40bb16">
+			<div class="fl-col fl-node-6016e3a40bc22" data-node="6016e3a40bc22">
+	<div class="fl-col-content fl-node-content">
+	<section id="strix-servers" class="fl-module fl-module-interactive-banner-2 fl-node-6016e4b4ef0e9" data-node="6016e4b4ef0e9">
+	<div class="fl-module-content fl-node-content">
+		
+<div class="uabb-module-content uabb-ib2-outter uabb-new-ib uabb-ib-effect-style9  uabb-ib2-min-height" >
+			<img class="uabb-new-ib-img" src="/https://andrie0604.github.io/Ravendev/wp-content/uploads/2021/01/StriXServer6.png" alt="StriXServer6">
+		<div class="uabb-new-ib-desc">
+			<div class="uabb-new-ib-content uabb-text-editor uabb-simplify"><p>StriXServers Hosting</p></div>
+	</div>
+	</div>
+	</div>
+</section>
+	</div>
+</div>
+			<div class="fl-col fl-node-6016e3a40bc28 fl-col-small" data-node="6016e3a40bc28">
+	<div class="fl-col-content fl-node-content">
+	<section id="abc-game-servers" class="fl-module fl-module-interactive-banner-2 fl-node-6016ed56c3ae0" data-node="6016ed56c3ae0">
+	<div class="fl-module-content fl-node-content">
+		
+<div class="uabb-module-content uabb-ib2-outter uabb-new-ib uabb-ib-effect-style9  uabb-ib2-min-height" >
+			<img class="uabb-new-ib-img" src="/https://andrie0604.github.io/Ravendev/wp-content/uploads/2021/01/ABCGameServers5.png" alt="ABCGameServers5">
+		<div class="uabb-new-ib-desc">
+			<div class="uabb-new-ib-content uabb-text-editor uabb-simplify"><p>ABC Game Server Hosting</p></div>
+	</div>
+	</div>
+	</div>
+</section>
+	</div>
+</div>
+	</div>
+
+<div class="fl-col-group fl-node-6016e57f4f4bd fl-col-group-nested" data-node="6016e57f4f4bd">
+			<div class="fl-col fl-node-6016e57f4f5f7 fl-col-small" data-node="6016e57f4f5f7">
+	<div class="fl-col-content fl-node-content">
+	<section id="gaming-deluxe" class="fl-module fl-module-interactive-banner-2 fl-node-6016e585c06a6" data-node="6016e585c06a6">
+	<div class="fl-module-content fl-node-content">
+		
+<div class="uabb-module-content uabb-ib2-outter uabb-new-ib uabb-ib-effect-style9  uabb-ib2-min-height" >
+			<img class="uabb-new-ib-img" src="/https://andrie0604.github.io/Ravendev/wp-content/uploads/2021/01/GamingDeluxe5.png" alt="GamingDeluxe5">
+		<div class="uabb-new-ib-desc">
+			<div class="uabb-new-ib-content uabb-text-editor uabb-simplify"><p>GamingDeluxe Server Hosting</p></div>
+	</div>
+	</div>
+	</div>
+</section>
+	</div>
+</div>
+			<div class="fl-col fl-node-6016e57f4f608 fl-col-small" data-node="6016e57f4f608">
+	<div class="fl-col-content fl-node-content">
+	<section id="craft-and-survive" class="fl-module fl-module-interactive-banner-2 fl-node-6016e5cb9ab5b" data-node="6016e5cb9ab5b">
+	<div class="fl-module-content fl-node-content">
+		
+<div class="uabb-module-content uabb-ib2-outter uabb-new-ib uabb-ib-effect-style9  uabb-ib2-min-height" >
+			<img class="uabb-new-ib-img" src="/https://andrie0604.github.io/Ravendev/wp-content/uploads/2021/01/CraftAndSurvive5.png" alt="CraftAndSurvive5">
+		<div class="uabb-new-ib-desc">
+			<div class="uabb-new-ib-content uabb-text-editor uabb-simplify"><p>Craft And Survive Server Hosting</p></div>
+	</div>
+	</div>
+	</div>
+</section>
+	</div>
+</div>
+	</div>
+
+<div class="fl-col-group fl-node-6016e618a2a36 fl-col-group-nested" data-node="6016e618a2a36">
+			<div class="fl-col fl-node-6016e618a2beb fl-col-small" data-node="6016e618a2beb">
+	<div class="fl-col-content fl-node-content">
+	<section id="myblackbox-hosting" class="fl-module fl-module-interactive-banner-2 fl-node-6016e667ed8c7" data-node="6016e667ed8c7">
+	<div class="fl-module-content fl-node-content">
+		
+<div class="uabb-module-content uabb-ib2-outter uabb-new-ib uabb-ib-effect-style9  uabb-ib2-min-height" >
+			<img class="uabb-new-ib-img" src="/https://andrie0604.github.io/Ravendev/wp-content/uploads/2021/01/MyBlackboxHosting3.png" alt="MyBlackboxHosting3">
+		<div class="uabb-new-ib-desc">
+			<div class="uabb-new-ib-content uabb-text-editor uabb-simplify"><p>MyBlackbox Server Hosting</p></div>
+	</div>
+	</div>
+	</div>
+</section>
+	</div>
+</div>
+			<div class="fl-col fl-node-6016e618a2bf6" data-node="6016e618a2bf6">
+	<div class="fl-col-content fl-node-content">
+	<section id="abl-electromech" class="fl-module fl-module-interactive-banner-2 fl-node-6016e62cbf833" data-node="6016e62cbf833">
+	<div class="fl-module-content fl-node-content">
+		
+<div class="uabb-module-content uabb-ib2-outter uabb-new-ib uabb-ib-effect-style9  uabb-ib2-min-height" >
+			<img class="uabb-new-ib-img" src="/https://andrie0604.github.io/Ravendev/wp-content/uploads/2021/01/ABL1.png" alt="ABL1">
+		<div class="uabb-new-ib-desc">
+			<div class="uabb-new-ib-content uabb-text-editor uabb-simplify"><p>ABL Electromechanical Service</p></div>
+	</div>
+	</div>
+	</div>
+</section>
+	</div>
+</div>
+	</div>
+	</div>
+</div>
+	</div>
+
+<div class="fl-col-group fl-node-6016eddb50873" data-node="6016eddb50873">
+			<div class="fl-col fl-node-6016eddb50975" data-node="6016eddb50975">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-advanced-separator fl-node-6016ee02745d9" data-node="6016ee02745d9">
+	<div class="fl-module-content fl-node-content">
+		<div class="uabb-module-content uabb-separator-parent">
+	
+	
+			<div class="uabb-separator"></div>
+	</div>	</div>
+</div>
+	</div>
+</div>
+	</div>
+		</div>
+	</div>
+</div>
+</div><div id="uabb-js-breakpoint" class="uabb-js-breakpoint" style="display: none;"></div>	</div><!-- .fl-post-content -->
+	
+</article>
+
+<!-- .fl-post -->
+		</div>
+	</div>
+</div>
+
+
+	</div><!-- .fl-page-content -->
+	<footer class="fl-builder-content fl-builder-content-12 fl-builder-global-templates-locked" data-post-id="12" itemscope="itemscope" itemtype="http://schema.org/WPFooter" data-type="footer"><div class="fl-row fl-row-full-width fl-row-bg-photo fl-node-5fe6a72905277" data-node="5fe6a72905277">
+	<div class="fl-row-content-wrap">
+						<div class="fl-row-content fl-row-fixed-width fl-node-content">
+		
+<div class="fl-col-group fl-node-5fe6d8893d24c" data-node="5fe6d8893d24c">
+			<div class="fl-col fl-node-5fe6d8893d4fb fl-col-has-cols" data-node="5fe6d8893d4fb">
+	<div class="fl-col-content fl-node-content">
+	
+<div class="fl-col-group fl-node-5fe6d88f40efb fl-col-group-nested" data-node="5fe6d88f40efb">
+			<div class="fl-col fl-node-5fe6d88f4103b fl-col-small" data-node="5fe6d88f4103b">
+	<div class="fl-col-content fl-node-content">
+		</div>
+</div>
+			<div class="fl-col fl-node-5fe6d88f41042 fl-col-small" data-node="5fe6d88f41042">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-photo fl-node-5fe6d893d6627" data-node="5fe6d893d6627">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-photo fl-photo-align-center" itemscope itemtype="https://schema.org/ImageObject">
+	<div class="fl-photo-content fl-photo-img-png">
+				<a href="/https://andrie0604.github.io/Ravendev" target="_self" itemprop="url">
+				<img loading="lazy" class="fl-photo-img wp-image-10 size-full" src="/https://andrie0604.github.io/Ravendev/wp-content/uploads/2020/12/RD-Icon.png" alt="RD-Icon" itemprop="image" height="87" width="134" title="RD-Icon"  />
+				</a>
+					</div>
+	</div>
+	</div>
+</div>
+<div class="fl-module fl-module-advanced-icon fl-node-5fe6d8e3681a1" data-node="5fe6d8e3681a1">
+	<div class="fl-module-content fl-node-content">
+		<div class="uabb-module-content adv-icon-wrap adv-icon-horizontal adv-icon-center">
+<a class="adv-icon-link adv-icon-1" href="http://www.facebook.com/Andrie.XD" target="_self" ><div class="uabb-module-content uabb-imgicon-wrap">				<span class="uabb-icon-wrap">
+			<span class="uabb-icon">
+				<i class="ua-icon ua-icon-facebook-with-circle"></i>
+			</span>
+		</span>
+	
+		</div></a><a class="adv-icon-link adv-icon-2" href="" target="_self" ><div class="uabb-module-content uabb-imgicon-wrap">				<span class="uabb-icon-wrap">
+			<span class="uabb-icon">
+				<i class="fi-social-github"></i>
+			</span>
+		</span>
+	
+		</div></a><a class="adv-icon-link adv-icon-3" href="https://www.linkedin.com/in/leandro-andrie-ventura-804013159/" target="_self" ><div class="uabb-module-content uabb-imgicon-wrap">				<span class="uabb-icon-wrap">
+			<span class="uabb-icon">
+				<i class="ua-icon ua-icon-linkedin-with-circle"></i>
+			</span>
+		</span>
+	
+		</div></a><a class="adv-icon-link adv-icon-4" href="mailto:andrie0604@gmail.com" target="_self" ><div class="uabb-module-content uabb-imgicon-wrap">				<span class="uabb-icon-wrap">
+			<span class="uabb-icon">
+				<i class="ua-icon ua-icon-message"></i>
+			</span>
+		</span>
+	
+		</div></a></div>	</div>
+</div>
+	</div>
+</div>
+			<div class="fl-col fl-node-5fe6d88f41046 fl-col-small" data-node="5fe6d88f41046">
+	<div class="fl-col-content fl-node-content">
+		</div>
+</div>
+	</div>
+<div class="fl-module fl-module-advanced-separator fl-node-5fe6dd96b3ef5" data-node="5fe6dd96b3ef5">
+	<div class="fl-module-content fl-node-content">
+		<div class="uabb-module-content uabb-separator-parent">
+	
+	
+			<div class="uabb-separator"></div>
+	</div>	</div>
+</div>
+	</div>
+</div>
+	</div>
+
+<div class="fl-col-group fl-node-5fe6a72905280" data-node="5fe6a72905280">
+			<div class="fl-col fl-node-5fe6a72905282" data-node="5fe6a72905282">
+	<div class="fl-col-content fl-node-content">
+	<div class="fl-module fl-module-rich-text fl-node-5fe6a72905283" data-node="5fe6a72905283">
+	<div class="fl-module-content fl-node-content">
+		<div class="fl-rich-text">
+	<p style="text-align: center;">© 2020 Ravendev | Web Design, Front &amp; Back-end, UI &amp; UX Developer. All Rights Reserved.</p>
+</div>
+	</div>
+</div>
+	</div>
+</div>
+	</div>
+		</div>
+	</div>
+</div>
+</footer><div id="uabb-js-breakpoint" class="uabb-js-breakpoint" style="display: none;"></div>	</div><!-- .fl-page -->
+<link rel='stylesheet' id='fl-builder-google-fonts-57718f27719e7c82bdca632844dcf40b-css'  href='//fonts.googleapis.com/css?family=Play%3A700%2C400&#038;ver=5.5.3' type='text/css' media='all' />
+<script type='text/javascript' src='/https://andrie0604.github.io/Ravendev/wp-content/plugins/bb-plugin/js/jquery.waypoints.min.js?ver=2.4.0.2' id='jquery-waypoints-js'></script>
+<script type='text/javascript' src='/https://andrie0604.github.io/Ravendev/wp-content/plugins/bb-ultimate-addon/modules/fancy-text/js/typed.js?ver=5.5.3' id='typed-js'></script>
+<script type='text/javascript' src='/https://andrie0604.github.io/Ravendev/wp-content/uploads/bb-plugin/cache/5-layout.js?ver=7fdfb01f04c10c92b4bcc074592ccdab' id='fl-builder-layout-5-js'></script>
+<script type='text/javascript' src='/https://andrie0604.github.io/Ravendev/wp-content/plugins/bb-plugin/js/jquery.ba-throttle-debounce.min.js?ver=2.4.0.2' id='jquery-throttle-js'></script>
+<script type='text/javascript' src='/https://andrie0604.github.io/Ravendev/wp-content/uploads/bb-plugin/cache/d16666a1c3f2584832f943528c46a547-layout-bundle.js?ver=2.4.0.2-1.2.5' id='fl-builder-layout-bundle-d16666a1c3f2584832f943528c46a547-js'></script>
+<script type='text/javascript' src='/https://andrie0604.github.io/Ravendev/wp-includes/js/hoverIntent.min.js?ver=1.8.1' id='hoverIntent-js'></script>
+<script type='text/javascript' id='megamenu-js-extra'>
+/* <![CDATA[ */
+var megamenu = {"timeout":"300","interval":"100"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/https://andrie0604.github.io/Ravendev/wp-content/plugins/megamenu/js/maxmegamenu.js?ver=2.9.2' id='megamenu-js'></script>
+<script type='text/javascript' src='/https://andrie0604.github.io/Ravendev/wp-content/plugins/bb-plugin/js/jquery.magnificpopup.min.js?ver=2.4.0.2' id='jquery-magnificpopup-js'></script>
+<script type='text/javascript' id='fl-automator-js-extra'>
+/* <![CDATA[ */
+var themeopts = {"medium_breakpoint":"992","mobile_breakpoint":"768"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/https://andrie0604.github.io/Ravendev/wp-content/themes/bb-theme/js/theme.min.js?ver=1.7.3' id='fl-automator-js'></script>
+<script type='text/javascript' src='/https://andrie0604.github.io/Ravendev/wp-includes/js/wp-embed.min.js?ver=5.5.3' id='wp-embed-js'></script>
+</body>
+</html>
