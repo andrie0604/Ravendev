@@ -14,4 +14,4 @@ RewriteRule . /ravendev/index.php [L]
 
 # END WordPress
 
-php_value max_execution_time 300
+php_value max_execution_time 3000
